@@ -23,7 +23,7 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('',(req,res)=>{
     res.render('index', {
-        anime: 'deathnote',
+        anime: 'Search Weather',
         hero: 'batsy',
         name: 'Batsy'
     })
@@ -31,7 +31,7 @@ app.get('',(req,res)=>{
 
 app.get('/about',(req,res)=>{
     res.render('about', {
-        anime: 'deathnote',
+        anime: 'Introduction',
         hero: 'batsy',
         name: 'Batsy'
     })
@@ -39,7 +39,7 @@ app.get('/about',(req,res)=>{
 
 app.get('/help',(req,res)=>{
     res.render('help', {
-        anime: 'deathnote',
+        anime: 'Help',
         hero: 'batsy',
         name: 'Batsy'
     })
@@ -73,7 +73,7 @@ app.get('/we', (req, res) => {
 
             res.send({
                 location: location,
-                forecast: fdata
+                forecast: fdata,
             })
         })
     })    

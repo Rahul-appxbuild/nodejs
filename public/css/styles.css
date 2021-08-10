@@ -3,13 +3,14 @@ body {
     font-family: arial;
     max-width: 650px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0px 16px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin-top: 
 }
 .main{
-    
+    padding-top: 100px;
     flex-grow: 1;
 }
 footer {
@@ -19,18 +20,48 @@ footer {
     padding: 16px 0;
 }
 
-header {
+.nav {
     margin-top: 16px;
     margin-bottom: 48px;
+    padding-top: 40px;
 }
+
 
 h1 {
     font-size: 64px;
     margin-bottom: 16px;
 }
 
-header a {
+ a {
     color: #888888;
     margin-right: 16px;
     text-decoration: none;
+    font-size: larger;
+}
+a:hover{
+    color: blueviolet;
+}
+input{
+    width: 360px;
+    height:30px;
+    font-size: larger;
+}
+::placeholder{
+    font-size: larger;
+}
+button{
+    margin-left: 10px;
+    height: 30px;
+    background-color:gold;
+    width: 70px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: goldenrod;
+}
+@media only screen and (max-width: 768px)  {
+    .img{
+        width: 600px;
+        height: 300px;
+    }
 }

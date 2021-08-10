@@ -9,7 +9,11 @@ const request = require('request')
         } else if (body.error) {
             callback('Unable to find location', undefined)
         } else {
-            callback(undefined,body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degress out.")
+            callback(undefined,{
+                sen: body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature + " degress out.",
+                winds: body.current.wind_speed,
+                windr: body.current.wind_dir
+            })
         }
     })
 }
