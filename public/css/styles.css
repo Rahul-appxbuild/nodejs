@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin-top: 
+   
 }
 .main{
     padding-top: 100px;
@@ -59,9 +59,10 @@ button{
 button:hover{
     background-color: goldenrod;
 }
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 1080px)  {
     .img{
         width: 600px;
         height: 300px;
     }
+
 }

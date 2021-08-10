@@ -13,11 +13,13 @@ weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
 
     const location = search.value
+    messageOne.textContent = 'Loading...'
+    messageTwo.textContent = ''
 
     fetch('/we?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
-                msg.textContent = 'enter vaild input'
+                messageOne.textContent = data.error
             } else {
                 msg.textContent = data.forecast.sen
                 s.textContent = 'wind-speed: '+ data.forecast.winds
